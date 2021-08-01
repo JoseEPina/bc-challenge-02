@@ -140,6 +140,7 @@ section {
 
 .info-container {
    display: flex;
+   /* flex-flow: wrap; */
    /* flex: auto; */
 }
 
@@ -202,6 +203,11 @@ section {
 }
 
 #calculator {
+   background-image: url("../images/mockup-top.jpg");
+   background-size: cover;
+}
+
+#pastel-puzzles {
    background-image: url("../images/mockup-top.jpg");
    background-size: cover;
 }
