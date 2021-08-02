@@ -108,9 +108,16 @@ section {
    background-attachment: fixed;
    background-position: 60%;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    flex-wrap: wrap;
-   align-items: flex-start;
+   align-items: center;
+}
+
+.hero img {
+   max-width: 40%;
+   max-height: 40%;
+   border-radius: 100%;
 }
 
 .hero-cta {
@@ -145,7 +152,7 @@ section {
 
 .container .item02 {
    border-left: 3px solid;
-   font-size: 100%;
+   font-size: 18px;
    margin: 5px auto;
    width: 80%;
    padding: 15px;
@@ -156,6 +163,20 @@ section {
    display: flex;
    flex-wrap: wrap;
    color: var(--secondary-color);
+}
+
+.item03 {
+   display: flex;
+}
+
+.item03 a {
+   color: var(--primary-color);
+   text-decoration: none;
+   margin: 50px auto;
+   font-size: 28px;
+   /* display: inline-flex; */
+   align-items: center;
+   justify-content: space-between;
 }
 
 .text-box {
@@ -172,7 +193,7 @@ section {
 .app-01 {
    background-image: url("../images/run-buddy.png");
    background-size: 110%;
-   background-position: bottom;
+   background-position: top 80px left 250px;
    background-attachment: fixed;
    margin: 5px auto;
    width: 99%;
@@ -214,8 +235,8 @@ section {
 
 .app-05 {
    background-image: url("../images/surf-report.jpg");
-   background-size: cover;
-   background-position: center;
+   background-size: 80;
+   background-position: top 40px left 385px;
    background-attachment: fixed;
    margin: 5px auto;
    width: 49%;
