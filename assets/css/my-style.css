@@ -2,6 +2,7 @@
    --primary-color: #61b1ba;
    --secondary-color: #28374f;
    --tertiary-color: #708090;
+   --plain-color: #ffffff;
 }
 
 * {
@@ -131,15 +132,13 @@ section {
 .container {
    padding-top: 40px;
    display: flex;
-   justify-content: flex-start;
-   align-items: flex-start;
    flex-wrap: wrap;
    color: var(--secondary-color);
 }
 
 .container .item01 {
-   font-size: 250%;
-   padding: 0 15px 15px 0;
+   font-size: 225%;
+   padding: 2% 15px;
    text-align: right;
    width: 20%;
 }
@@ -153,63 +152,75 @@ section {
    text-align: left;
 }
 
-.app-01 {
-   background-image: url("../images/run-buddy.png");
-   background-size: cover;
-   background-position: right;
-   /* background-attachment: fixed; */
-   padding: 80px 15px;
-   margin: 5px auto;
-   width: auto;
-   height: 200px;
+.container2 {
+   display: flex;
+   flex-wrap: wrap;
+   color: var(--secondary-color);
 }
 
+.text-box {
+   background-color: var(--primary-color);
+   width: fit-content;
+   padding: 5px 10px;
+   text-align: center;
+   border-radius: 5px;
+   position: absolute;
+   bottom: 50px;
+   left: 0px;
+}
+
+.app-01 {
+   background-image: url("../images/run-buddy.png");
+   background-size: 110%;
+   background-position: bottom;
+   background-attachment: fixed;
+   margin: 5px auto;
+   width: 99%;
+   height: 300px;
+   position: relative;
+}
 .app-02 {
    background-image: url("../images/maths.jpeg");
    background-size: cover;
-   background-position: right;
+   background-position: center;
    background-attachment: fixed;
-   padding: 28px 15px;
    margin: 5px auto;
-   width: 50%;
-   height: 100px;
+   width: 49%;
+   height: 250px;
+   position: relative;
 }
 
 .app-03 {
    background-image: url("../images/pastel-puzzles.jpg");
    background-size: cover;
-   background-position: right;
+   background-position: center;
    background-attachment: fixed;
-   padding: 28px 15px;
    margin: 5px auto;
-   width: 50%;
-   height: 100px;
+   width: 49%;
+   height: 250px;
+   position: relative;
 }
 
 .app-04 {
    background-image: url("../images/led-art.jpg");
    background-size: cover;
-   background-position: right;
+   background-position: center;
    background-attachment: fixed;
-   padding: 28px 15px;
    margin: 5px auto;
-   width: 50%;
-   height: 100px;
+   width: 49%;
+   height: 250px;
+   position: relative;
 }
 
 .app-05 {
    background-image: url("../images/surf-report.jpg");
    background-size: cover;
-   background-position: right;
+   background-position: center;
    background-attachment: fixed;
-   padding: 28px 15px;
    margin: 5px auto;
-   width: 50%;
-   height: 100px;
-}
-
-mark {
-   background-color: var(--primary-color);
+   width: 49%;
+   height: 250px;
+   position: relative;
 }
 
 .contact {
@@ -221,10 +232,16 @@ mark {
 }
 
 /* MEDIA QUERY FOR SMALLER SCREENS AND SMALLER */
-@media screen and (min-width: 981px) {
+@media screen and (max-width: 980px) {
    /* This will be applied on any screen smaller than 980px */
    .container {
       flex-wrap: nowrap;
+   }
+   .container .item01 {
+      font-size: 125%;
+      padding: 0 15px 15px 0;
+      text-align: right;
+      width: 20%;
    }
 }
 
