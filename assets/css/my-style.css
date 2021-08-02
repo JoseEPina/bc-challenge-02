@@ -30,7 +30,7 @@ header {
    background-image: url("../images/hero-bg.gif");
    background-attachment: fixed;
    background-size: cover;
-   background-position: 80%;
+   background-position: 60%;
 }
 
 header h1 {
@@ -105,7 +105,7 @@ section {
    background-image: url("../images/hero-bg.gif");
    background-size: cover;
    background-attachment: fixed;
-   background-position: center;
+   background-position: 60%;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
@@ -113,8 +113,8 @@ section {
 }
 
 .hero-cta {
-   width: 35%;
-   text-align: right;
+   width: auto;
+   text-align: center;
    margin: 3.5%;
    color: #fff;
    font-size: 18px;
@@ -123,112 +123,94 @@ section {
 
 .hero-cta h2 {
    font-style: italic;
-   font-size: 55px;
+   font-size: 30px;
    color: var(--primary-color);
    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.intro p {
-   line-height: 1.7;
+.container {
+   padding-top: 40px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: wrap;
    color: var(--secondary-color);
-   background-color: var(--tertiary-color);
+}
+
+.container .item01 {
+   font-size: 250%;
+   padding: 0 15px 15px 0;
+   text-align: right;
+   width: 20%;
+}
+
+.container .item02 {
+   border-left: 3px solid;
+   font-size: 100%;
+   margin: 5px auto;
    width: 80%;
-   font-size: 20px;
-   margin: 0 auto;
-   text-align: center;
-}
-
-.info-container {
-   display: flex;
-   /* flex-flow: wrap; */
-   /* flex: auto; */
-}
-
-.sidebar {
-   font-size: 30px;
-   color: var(--secondary-color);
-   border-right: 3px solid;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   text-align: center;
-   width: 30%;
-}
-
-.about-text {
-   flex: 1;
-}
-
-.about-text p {
    padding: 15px;
-   color: #eb4034;
-   font-size: 18px;
+   text-align: left;
 }
 
-.primary-border {
-   border-color: var(--primary-color);
-}
-
-.secondary-border {
-   border-color: var(--primary-color);
-}
-
-.my-avatar {
-   margin: 20px auto;
-}
-
-.my-avatar img {
-   width: 85%;
-}
-
-.application {
-   margin: 25px;
-   border: 1px solid var(--tertiary-color); /* Now we are adding State Based Positing */
-   display: flex;
-   justify-content: space-around;
-   /* flex-basis: auto; */
-   /*justify-content: center; */
-   /*flex-wrap: wrap; */
-   /*align-items: flex-start; */
-   /* flex: auto; */
-   /* flex-wrap: wrap; */
-   /* display: flex; */
-}
-
-/* .about-app {
-} */
-
-#run-buddy {
+.app-01 {
    background-image: url("../images/run-buddy.png");
    background-size: cover;
+   background-position: right;
+   /* background-attachment: fixed; */
+   padding: 80px 15px;
+   margin: 5px auto;
+   width: auto;
+   height: 200px;
 }
 
-#calculator {
-   background-image: url("../images/mockup-top.jpg");
+.app-02 {
+   background-image: url("../images/maths.jpeg");
    background-size: cover;
+   background-position: right;
+   background-attachment: fixed;
+   padding: 28px 15px;
+   margin: 5px auto;
+   width: 50%;
+   height: 100px;
 }
 
-#pastel-puzzles {
-   background-image: url("../images/mockup-top.jpg");
+.app-03 {
+   background-image: url("../images/pastel-puzzles.jpg");
    background-size: cover;
+   background-position: right;
+   background-attachment: fixed;
+   padding: 28px 15px;
+   margin: 5px auto;
+   width: 50%;
+   height: 100px;
 }
 
-.application h3 {
-   font-size: 26px;
-   padding: 10px;
+.app-04 {
+   background-image: url("../images/led-art.jpg");
+   background-size: cover;
+   background-position: right;
+   background-attachment: fixed;
+   padding: 28px 15px;
+   margin: 5px auto;
+   width: 50%;
+   height: 100px;
 }
 
-.application p {
-   padding: 10px;
+.app-05 {
+   background-image: url("../images/surf-report.jpg");
+   background-size: cover;
+   background-position: right;
+   background-attachment: fixed;
+   padding: 28px 15px;
+   margin: 5px auto;
+   width: 50%;
+   height: 100px;
 }
 
-/* .about-app img {
-   max-width: 40%;
-   padding: 10px;
-} */
-
-/* .about-app p {
-   padding: 10px;
-} */
+mark {
+   background-color: var(--primary-color);
+}
 
 .contact {
    background: var(--secondary-color);
@@ -236,6 +218,14 @@ section {
 
 .contact h2 {
    color: var(--primary-color);
+}
+
+/* MEDIA QUERY FOR SMALLER SCREENS AND SMALLER */
+@media screen and (min-width: 981px) {
+   /* This will be applied on any screen smaller than 980px */
+   .container {
+      flex-wrap: nowrap;
+   }
 }
 
 /* MEDIA QUERY FOR SMALLER SCREENS AND SMALLER */
@@ -252,3 +242,56 @@ section {
 @media screen and (max-width: 575px) {
    /* this will be applied on any screen smaller than 575px */
 }
+
+/* .intro p {
+   line-height: 1.3;
+   color: var(--secondary-color);
+   width: auto;
+   font-size: 18px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.section-title {
+   font-size: 38px;
+   color: var(--secondary-color);
+   border-bottom: 3px solid;
+   border-top: 3px solid;
+   padding: 5px;
+   text-align: center;
+   margin: 0 auto 35px auto;
+   width: 30%;
+} */
+/* .sidebar {
+   font-size: 30px;
+   color: var(--secondary-color);
+   border-right: 3px solid;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   text-align: center;
+   width: 30%;
+} */
+/* 
+.primary-border {
+   border-color: var(--primary-color);
+}
+
+.secondary-border {
+   border-color: var(--primary-color);
+} */
+
+/* .my-avatar {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px auto;
+}
+
+.my-avatar img {
+   width: 250px;
+} */
+
+/* .application {
+   margin: 25px;
+   border: 1px solid var(--tertiary-color); /* Now we are adding State Based Positing 
+} */
