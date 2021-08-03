@@ -1,5 +1,5 @@
 :root {
-   --primary-color: #61b1ba;
+   --primary-color: #a7ced3;
    --secondary-color: #28374f;
    --tertiary-color: #708090;
    --plain-color: #ffffff;
@@ -161,8 +161,19 @@ section {
 
 .container2 {
    display: flex;
+   /* flex-direction: column; */
    flex-wrap: wrap;
-   color: var(--secondary-color);
+   /* color: var(--secondary-color); */
+}
+
+.text-box {
+   background-color: var(--primary-color);
+   width: fit-content;
+   padding: 5px 10px;
+   border-radius: 5px;
+   position: absolute;
+   bottom: 50px;
+   left: 0px;
 }
 
 .item03 {
@@ -174,37 +185,28 @@ section {
    text-decoration: none;
    margin: 50px auto;
    font-size: 28px;
-   /* display: inline-flex; */
    align-items: center;
    justify-content: space-between;
 }
 
-.text-box {
-   background-color: var(--primary-color);
-   width: fit-content;
-   padding: 5px 10px;
-   text-align: center;
-   border-radius: 5px;
-   position: absolute;
-   bottom: 50px;
-   left: 0px;
-}
-
-.app-01 {
+.app-01 a {
    background-image: url("../images/run-buddy.png");
    background-size: 110%;
    background-position: top 80px left 250px;
    background-attachment: fixed;
+   display: block;
    margin: 5px auto;
    width: 99%;
    height: 300px;
    position: relative;
 }
+
 .app-02 {
    background-image: url("../images/maths.jpeg");
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
+   display: block;
    margin: 5px auto;
    width: 49%;
    height: 250px;
@@ -216,6 +218,7 @@ section {
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
+   display: block;
    margin: 5px auto;
    width: 49%;
    height: 250px;
@@ -227,6 +230,7 @@ section {
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
+   display: block;
    margin: 5px auto;
    width: 49%;
    height: 250px;
@@ -238,6 +242,7 @@ section {
    background-size: 80;
    background-position: top 40px left 385px;
    background-attachment: fixed;
+   display: block;
    margin: 5px auto;
    width: 49%;
    height: 250px;
@@ -309,7 +314,7 @@ section {
    text-align: center;
    width: 30%;
 } */
-/* 
+/*
 .primary-border {
    border-color: var(--primary-color);
 }
@@ -331,5 +336,5 @@ section {
 
 /* .application {
    margin: 25px;
-   border: 1px solid var(--tertiary-color); /* Now we are adding State Based Positing 
+   border: 1px solid var(--tertiary-color); /* Now we are adding State Based Positing
 } */
