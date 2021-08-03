@@ -255,6 +255,43 @@ section {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
    /* This will be applied on any screen between 768px and 575px */
+   header {
+      padding: 5px 35px;
+   }
+
+   header nav {
+      padding: 5px 10px;
+   }
+   header nav ul li a {
+      font-size: 20px;
+   }
+
+   .container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: top;
+   }
+
+   .container .item01 {
+      font-size: 150%;
+      padding: 1% 10px;
+      text-align: right;
+      width: 25%;
+   }
+
+   .container h2 {
+      font-size: 150%;
+   }
+
+   .item03 {
+      flex-direction: column;
+   }
+
+   .item03 a {
+      text-decoration: underline;
+      margin: 15px auto;
+      font-size: 20px;
+   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
