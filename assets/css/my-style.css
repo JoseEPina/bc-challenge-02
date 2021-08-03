@@ -2,7 +2,7 @@
    --primary-color: #a7ced3;
    --secondary-color: #28374f;
    --tertiary-color: #708090;
-   --plain-color: #ffffff;
+   --white: #fff;
 }
 
 * {
@@ -74,7 +74,7 @@ header nav ul li a:hover {
 }
 
 section {
-   padding: 30px 15px;
+   padding: 20px 15px;
 }
 
 /* Hero Style Start */
@@ -100,7 +100,7 @@ section {
    width: auto;
    text-align: center;
    margin: 3.5%;
-   color: #fff;
+   color: var(--white);
    font-size: 18px;
    line-height: 1.2;
 }
@@ -233,23 +233,39 @@ section {
    color: var(--primary-color);
 }
 
-/* MEDIA QUERY FOR SMALLER SCREENS AND SMALLER */
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 980px) {
    /* This will be applied on any screen smaller than 980px */
-   .container {
-      flex-wrap: nowrap;
-   }
-   .container .item01 {
-      font-size: 125%;
-      padding: 0 15px 15px 0;
-      text-align: right;
-      width: 20%;
-   }
-}
 
-/* MEDIA QUERY FOR SMALLER SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-   /* This will be applied on any screen smaller than 980px */
+   header h1 {
+      padding-top: 5px;
+   }
+
+   header nav {
+      padding: 5px 10px;
+   }
+   header nav ul li a {
+      font-size: 24px;
+   }
+
+   .container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: top;
+   }
+
+   .container .item01 {
+      font-size: 150%;
+      padding: 1% 10px;
+      text-align: right;
+      width: 18%;
+   }
+
+   .item03 a {
+      text-decoration: underline;
+      margin: 15px auto;
+      font-size: 20px;
+   }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
