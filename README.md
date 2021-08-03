@@ -36,6 +36,6 @@ https://joseepina.github.io/bc-challenge-02/index.html
 
 https://github.com/JoseEPina/bc-challenge-02
 
-### Application screenshot
+### Application screenshot - MOBILE First 575px
 
 ![Screenshot of Jose E Pina Portfolio Website](/assets/images/mobile-screenshot.png?raw=true "Screenshot of Jose E Pina Portfolio Website")
