@@ -1,18 +1,19 @@
+/* Declaring global variables for color palette */
 :root {
    --primary-color: #a7ced3;
    --secondary-color: #28374f;
    --tertiary-color: #708090;
    --white: #fff;
 }
-
+/* Default values for all HTML elements */
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
+/* Default Font and Font Color */
 body {
-   /* Here we apply Font and Font Color to body */
    color: var(--tertiary-color);
    font-family: Helvetica, Arial, sans-serif;
 }
@@ -73,6 +74,7 @@ header nav ul li a:hover {
    text-shadow: none;
 }
 
+/* Section Styles Start */
 section {
    padding: 20px 15px;
 }
@@ -112,21 +114,24 @@ section {
    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.container {
+/* Container 01 (Section Titles) Start */
+.container01 {
    padding-top: 40px;
    display: flex;
    flex-wrap: wrap;
    color: var(--secondary-color);
 }
 
-.container .item01 {
+.container01 .my-title {
    font-size: 225%;
    padding: 2% 15px;
    text-align: right;
    width: 20%;
 }
 
-.container .item02 {
+/* Container 02 (Section Details & Left Border) Start */
+.my-details,
+.container02 {
    border-left: 3px solid;
    font-size: 18px;
    margin: 5px auto;
@@ -135,11 +140,10 @@ section {
    text-align: left;
 }
 
-.container2 {
+/* Container 03 (Applications) Start */
+.container03 {
    display: flex;
-   /* flex-direction: column; */
    flex-wrap: wrap;
-   /* color: var(--secondary-color); */
 }
 
 .text-box {
@@ -152,11 +156,13 @@ section {
    left: 0px;
 }
 
-.item03 {
+/* Container 04 (Contact Me Details) Start */
+.container04 {
    display: flex;
 }
 
-.item03 a {
+.container04 a {
+   padding: 10px 15px;
    color: var(--primary-color);
    text-decoration: underline;
    margin: 50px auto;
@@ -165,64 +171,51 @@ section {
    justify-content: space-between;
 }
 
-.app-01 a {
-   background-image: url("../images/run-buddy.png");
-   background-size: 110%;
-   background-position: top 80px left 250px;
-   background-attachment: fixed;
-   display: block;
-   margin: 5px auto;
-   width: 99%;
-   height: 300px;
-   position: relative;
+.container04 a:hover {
+   background: var(--secondary-color);
+   border-radius: 15px;
 }
 
-.app-02 {
-   background-image: url("../images/maths.jpeg");
+/* Application Background imgs, Clickable w/ Textbox */
+.app-01,
+.app-02,
+.app-03,
+.app-04,
+.app-05 {
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
    display: block;
    margin: 5px auto;
-   width: 49%;
-   height: 250px;
    position: relative;
+   height: 250px;
+}
+
+.app-01 {
+   background-image: url("../images/run-buddy.png");
+   width: 99%;
+   height: 300px;
+   background-size: 110%;
+   background-position: top 80px left 250px;
+}
+.app-02 {
+   background-image: url("../images/maths.jpeg");
+   width: 49%;
 }
 
 .app-03 {
    background-image: url("../images/pastel-puzzles.jpg");
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   display: block;
-   margin: 5px auto;
    width: 49%;
-   height: 250px;
-   position: relative;
 }
 
 .app-04 {
    background-image: url("../images/led-art.jpg");
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   display: block;
-   margin: 5px auto;
    width: 49%;
-   height: 250px;
-   position: relative;
 }
 
 .app-05 {
    background-image: url("../images/surf-report.jpg");
-   background-size: 80;
-   background-position: top 40px left 385px;
-   background-attachment: fixed;
-   display: block;
-   margin: 5px auto;
    width: 49%;
-   height: 250px;
-   position: relative;
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -240,20 +233,20 @@ section {
       font-size: 24px;
    }
 
-   .container {
+   .container01 {
       padding-top: 10px;
       padding-bottom: 10px;
       align-items: top;
    }
 
-   .container .item01 {
+   .container01 .my-title {
       font-size: 150%;
       padding: 1% 10px;
       text-align: right;
       width: 18%;
    }
 
-   .item03 a {
+   .container04 a {
       text-decoration: underline;
       margin: 15px auto;
       font-size: 20px;
@@ -274,28 +267,28 @@ section {
       font-size: 20px;
    }
 
-   .container {
+   .container01 {
       padding-top: 10px;
       padding-bottom: 10px;
       align-items: top;
    }
 
-   .container .item01 {
+   .container01 .my-title {
       font-size: 150%;
       padding: 1% 10px;
       text-align: right;
       width: 25%;
    }
 
-   .container h2 {
+   .container01 h2 {
       font-size: 150%;
    }
 
-   .item03 {
+   .container04 {
       flex-direction: column;
    }
 
-   .item03 a {
+   .container04 a {
       text-decoration: underline;
       margin: 15px auto;
       font-size: 20px;
@@ -318,28 +311,28 @@ section {
       font-size: 18px;
    }
 
-   .container {
+   .container01 {
       padding-top: 10px;
       flex-direction: column;
       align-items: center;
    }
 
-   .container .item01 {
+   .container01 .my-title {
       font-size: 170%;
       padding: 1% 15px;
       text-align: center;
       width: 60%;
    }
 
-   .container h2 {
+   .container01 h2 {
       font-size: 170%;
    }
 
-   .item03 {
+   .container04 {
       flex-direction: column;
    }
 
-   .item03 a {
+   .container04 a {
       text-decoration: underline;
       margin: 15px auto;
    }
