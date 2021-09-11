@@ -30,7 +30,7 @@ The core skills used in this project are: flexbox, media queries, and CSS variab
 
 ### Application URL
 
-https://joseepina.github.io/bc-challenge-02/index.html
+https://joseepina.github.io/bc-challenge-02/
 
 ### Repository URL
 
