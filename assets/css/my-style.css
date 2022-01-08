@@ -193,7 +193,7 @@ section {
 }
 
 .app-01 {
-   background-image: url('../images/marketplace.png');
+   background-image: url('../images/health-app-home.png');
    /* width: 99%; */
    height: 300px;
    background-size: 78%;
@@ -201,27 +201,35 @@ section {
 }
 
 .app-02 {
+   background-image: url('../images/marketplace.png');
+   /* width: 99%; */
+   height: 300px;
+   background-size: 78%;
+   background-position-x: right;
+}
+
+.app-03 {
    background-image: url('../images/playlist.png');
    width: 99%;
    height: 300px;
    background-size: 110%;
 }
-.app-03 {
+.app-04 {
    background-image: url('../images/run-buddy.png');
    width: 49%;
 }
 
-.app-04 {
+.app-05 {
    background-image: url('../images/maths.jpeg');
    width: 49%;
 }
 
-.app-05 {
+.app-06 {
    background-image: url('../images/led-art.jpg');
    width: 49%;
 }
 
-.app-06 {
+.app-07 {
    background-image: url('../images/surf-report.jpg');
    width: 49%;
 }
